@@ -1,0 +1,145 @@
+/* general */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #212832;
+  --second-color: #fc7613;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* start request section */
+.request .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.request_body {
+  background-color: var(--main-color) !important;
+  color: white;
+  padding: 20px 18px;
+  border-radius: 15px;
+}
+.request_star {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #262f38;
+  margin-bottom: 16px;
+}
+.request_star img {
+  width: 40%;
+}
+.request_body p {
+  font-weight: 500;
+  font-size: 16px;
+}
+.request_pagination {
+  display: flex;
+  justify-content: space-between;
+}
+.request_pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #262f38;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(108, 117, 125);
+}
+.request_pagination a:hover {
+  color: white !important;
+  background-color: #7c8898 !important;
+}
+.request_submit {
+  width: 100%;
+  margin: 22px 0 17px 0;
+  border-radius: 20px;
+  padding: 8px;
+  text-transform: uppercase;
+  background-color: var(--second-color);
+  color: white;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.request_submit:hover {
+  color: var(--second-color);
+  background-color: white;
+}
+@media (max-width: 576px) {
+  .request_body {
+    max-width: 300px;
+  }
+}
+/* end request section */
+/* start submtion section */
+.submtion {
+}
+.submtion .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.submtion_body {
+  background-color: var(--main-color) !important;
+  color: white;
+  padding: 20px 18px;
+  border-radius: 15px;
+}
+.submtion_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 25px;
+}
+.submtion_header img {
+  width: 45%;
+}
+.submtion_content {
+  text-align: center;
+}
+.submtion_content p:first-child {
+  background-color: #262f38;
+  color: var(--second-color);
+  width: fit-content;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 16px auto;
+}
+.submtion_content p:nth-child(2) {
+  background: lightgreen !important;
+}
+
+.submtion_content p:nth-child(2) {
+}
+
+/* end submtion section */
